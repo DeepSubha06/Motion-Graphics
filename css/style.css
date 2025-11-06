@@ -1,0 +1,213 @@
+body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+video {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.down-vid {
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+
+.down-vid h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: yellow;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
+
+.sec-1 {
+  padding: 50px 0;
+}
+
+.wrap-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+table,
+th,
+td {
+  border: 5px solid yellowgreen;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+  background-color: beige;
+}
+
+.click-butt{
+  background-color: #5454d4;
+  padding: 10px 16px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.click-butt:hover {
+  background-color: black;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: bolder;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.details {
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Mediaquery */
+
+/* For Extra Small Screen */
+
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .down-vid h1 {
+    font-size: 33px;
+  }
+
+  .sec-1 {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+
+  .details {
+    font-size: 15px;
+  }
+
+  .click-butt a {
+    font-size: 15px;
+  }
+}
+
+/* For Small Screen */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .down-vid h1 {
+    font-size: 36px;
+  }
+
+  .sec-1 {
+    padding: 25px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .details {
+    font-size: 18px;
+  }
+
+  .click-butt a {
+    font-size: 18px;
+  }
+}
+
+/* For Medium Screen */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .down-vid h1 {
+    font-size: 40px;
+  }
+
+  .sec-1 {
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .details {
+    font-size: 20px;
+  }
+
+  .click-butt a {
+    font-size: 20px;
+  }
+
+}
+
+/* For Large Screen */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+
+    .down-vid h1 {
+    font-size: 40px;
+  }
+
+  .sec-1 {
+    padding: 35px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .details {
+    font-size: 23px;
+  }
+
+  .click-butt a {
+    font-size: 23px;
+  }
+}
